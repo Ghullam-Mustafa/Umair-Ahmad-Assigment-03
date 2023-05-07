@@ -1,3 +1,6 @@
+// input value 
+ let input = document.getElementById('data').value
+// array
 let cities = ["Faisalabad","Lahore","Karachi","Multan"]
 // alert function
 document.getElementById('simple-alert').onclick = function () {
@@ -24,6 +27,17 @@ document.getElementById('print-cities').onclick = function () {
     }
 }
 
+
+// add cities in list
+document.getElementById('add-cities').onclick = function () {
+    let city = document.getElementById('data').value;
+    if (!city) {
+        alert("enter your name");
+        return;
+    }
+    cities.push(city);
+    document.getElementById('output').innerHTML = cities
+}
 
 
 
