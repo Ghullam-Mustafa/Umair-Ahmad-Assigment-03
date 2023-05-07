@@ -1,4 +1,4 @@
-let cities = ["Faisalabad","Lahore","Karachi",]
+let cities = ["Faisalabad","Lahore","Karachi","Multan"]
 // alert function
 document.getElementById('simple-alert').onclick = function () {
    alert("I am a Alert");
@@ -11,6 +11,17 @@ document.getElementById('print-name').onclick = function () {
         return;
     }
     document.getElementById('output').innerHTML = inputdata;
+}
+
+// print cities name
+
+document.getElementById('print-cities').onclick = function () {
+    document.getElementById('output').innerHTML = ""
+    for (let index = 0; index < cities.length; index++) {
+        let num = index + 1 
+        document.getElementById('output').innerHTML += num + ')' + cities[index] + '<br>'
+        
+    }
 }
 
 
