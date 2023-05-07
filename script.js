@@ -5,7 +5,8 @@ document.getElementById('simple-alert').onclick = function () {
 document.getElementById('print-name').onclick = function () {
     let inputdata = document.getElementById('data').value;
     if (inputdata === "") {
-        alert("Enter your name in dialog box")
+        alert("Enter your name in dialog box");
+        return;
     }
     document.getElementById('output').innerHTML = inputdata;
 }
