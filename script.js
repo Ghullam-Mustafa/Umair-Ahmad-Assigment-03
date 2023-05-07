@@ -1,7 +1,9 @@
+let cities = ["Faisalabad","Lahore","Karachi",]
+// alert function
 document.getElementById('simple-alert').onclick = function () {
    alert("I am a Alert");
 }
-
+// print name function
 document.getElementById('print-name').onclick = function () {
     let inputdata = document.getElementById('data').value;
     if (inputdata === "") {
