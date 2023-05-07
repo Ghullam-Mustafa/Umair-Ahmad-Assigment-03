@@ -2,6 +2,14 @@ document.getElementById('simple-alert').onclick = function () {
    alert("I am a Alert");
 }
 
+document.getElementById('print-name').onclick = function () {
+    let inputdata = document.getElementById('data').value;
+    if (inputdata === "") {
+        alert("Enter your name in dialog box")
+    }
+    document.getElementById('output').innerHTML = inputdata;
+}
+
 
 
 
