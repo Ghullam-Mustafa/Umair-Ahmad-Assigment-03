@@ -40,6 +40,26 @@ document.getElementById('add-cities').onclick = function () {
 }
 
 
+// add table 
+document.getElementById('table').onclick = function () {
+    let number = document.getElementById('data').value;
+
+    if (!number) {
+        alert("Enter a number");
+    }
+
+    let limmet = prompt("Enter a limmet number");
+    document.getElementById('output').innerHTML = ''
+    for (let index = 1; index <= limmet; index++) {
+        
+        document.getElementById('output').innerHTML += number + '*' + index + '=' + number*index + '<br>' ;
+        
+    }
+
+    
+}
+ 
+
 
 
 
