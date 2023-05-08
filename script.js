@@ -58,6 +58,13 @@ document.getElementById('table').onclick = function () {
 
     
 }
+
+//  subtract cities
+
+document.getElementById('sub').onclick = function () {
+    let subcities = cities.pop();
+    document.getElementById('output').innerHTML += subcities;
+}
  
 
 
